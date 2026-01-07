@@ -96,7 +96,7 @@ export class Lipsync {
       return;
     }
     this.audioSource = audio;
-    if (!audio.src) {
+    if (!audio.src && !audio.srcObject) {
       console.warn("An audio source must be set before connecting");
       return;
     }
